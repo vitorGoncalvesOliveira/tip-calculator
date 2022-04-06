@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="./app.js"></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SPLI</br>TTER</h1>
+      <div class="content">
+        <div class="calculator">
+          <div class="caculator-values">
+            <h5>Bill</h5>
+            <div class="calculator-input">
+              <img src="./images/icon-dollar.svg" alt="dollar"  />
+              <input type="number" value="0" id="price-input" name="price" />
+            </div>
+            <h5>Select Tip %</h5>
+            <div class="calculator-tip">
+              <button value="5"> 5% </button>
+              <button value="10">10% </button>
+              <button value="15">15% </button>
+              <button value="25">25% </button>
+              <button value="50">50% </button>
+              <input id="id-custom-tip" type="number" placeholder="Custom"/>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <h5>Number of People </h5> <span id="error-zero-value" >can't be zero</span>
+            </div>
+            <div class="calculator-input">      
+              <img src="./images/icon-person.svg" alt="person"  />
+              <input type="number" value="0" id="person-input" name="person" />             
+            </div>
+          </div>
+          
+          <div class="calculator-result">
+            <div>
+                <div style="display: flex; flex-direction: column;">
+                  <span style="color: white; font-size: medium;">Tip Amount</span>
+                  <small>/ person</small>
+                </div>
+              <span id="tip-value">0.00</span>
+            </div>
+            <div>
+              <div style="display: flex; flex-direction: column;">
+                  <span style="color: white; font-size: medium;">Total</span>
+                  <small>/ person</small>
+              </div>
+              <span id="total-value">0.00</span>
+            </div>
+            <button id="reset-total">
+              RESET
+            </button>
+          </div>
+        </div>
+        
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </div>
+</body>
+</html>
