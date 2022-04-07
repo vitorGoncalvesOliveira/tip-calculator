@@ -17,7 +17,12 @@ window.onload = () =>{
             addClassSelectedButton(tipsButton.children, selectedButton,customTip)
             calculateAmount({price, numPerson, tipValuePorPerson, total, customTip})
         
-    })
+   })
+
+   numPerson.onkeypress =  (event) =>{ 
+        
+        return event.charCode >= 48 && event.charCode <= 57;
+    }
 
     numPerson.addEventListener('focusout', () =>{
          calculateAmount({price, numPerson, tipValuePorPerson, total, customTip })
@@ -26,6 +31,8 @@ window.onload = () =>{
         calculateAmount({price, numPerson, tipValuePorPerson, total, customTip})
      
    })
+
+   
     
   
 

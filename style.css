@@ -13,9 +13,28 @@
 
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
 body {
     background-color: var(--LightGrayishCyan);
-    font-family: 'Space Mono', monospace , Arial, Helvetica, sans-serif
+    font-family: 'Space Mono', monospace , Arial, Helvetica, sans-serif;
+
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+
 }
 
 .container {
