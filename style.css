@@ -34,6 +34,7 @@ body {
     display:flex;
     align-items: center;
     justify-content:center;
+    font-size: 1.4rem;
 
 }
 
@@ -81,7 +82,7 @@ body {
 .calculator-input img {
     display: inline;
     position: absolute;
-    top: 20px;
+    top: 1.4rem;
     left:12px;
 }
 
@@ -101,6 +102,7 @@ body {
     border-radius: 0.5rem;
     color: var(--White);
     font-family: 'Space Mono', monospace;
+    font-size: 1.4rem;
 }
 
 .special {
@@ -120,6 +122,7 @@ body {
     cursor: pointer;
     border-radius: 0.5rem;
     border: 1px solid var(--VeryDarkCyan);    
+    font-size: 1,4rem;
 }
 
 .calculator-tip button:hover {
@@ -131,6 +134,12 @@ body {
     font-family: 'Space Mono', monospace;
     font-weight: bold;
     font-size: medium;
+}
+
+#id-custom-tip {
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    font-size: 1.4rem;
 }
 
 .calculator-result {
@@ -176,4 +185,11 @@ body {
 
 #error-zero-value{
     color: red;
+}
+
+#total-value {
+    font-size: 2.4rem;
+}
+#tip-value {
+    font-size: 2.4rem;
 }
